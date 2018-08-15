@@ -5,12 +5,8 @@ import classes from "./BurgerIngredient.module.css";
 
 class BurgerIngredient extends Component {
   render() {
-    let ingredient = null;
-
+    let ingredient;
     switch (this.props.type) {
-      case "bread-bottom":
-        ingredient = <div className={classes.BreadBottom} />;
-        break;
       case "bread-top":
         ingredient = (
           <div className={classes.BreadTop}>
@@ -19,22 +15,25 @@ class BurgerIngredient extends Component {
           </div>
         );
         break;
-      case "meat":
-        ingredient = <div className={classes.Meat} />;
+      case "bread-bottom":
+        ingredient = <div className={classes.BreadBottom} />;
         break;
       case "cheese":
         ingredient = <div className={classes.Cheese} />;
         break;
-      case "salad":
-        ingredient = <div className={classes.Salad} />;
-        break;
       case "bacon":
         ingredient = <div className={classes.Bacon} />;
         break;
+      case "salad":
+        ingredient = <div className={classes.Salad} />;
+        break;
+      case "meat":
+        ingredient = <div className={classes.Meat} />;
+        break;
       default:
+        ingredient = <div />;
         break;
     }
-
     return ingredient;
   }
 }
