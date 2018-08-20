@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
-
 import classes from "./OrderSummary.module.css";
+
+import Button from "./../../UI/Button/Button";
 
 const orderSummary = props => {
   const ingredients = Object.keys(props.ingredients).map(ing => {
@@ -18,6 +19,12 @@ const orderSummary = props => {
       <p>A delicious burger with the following ingredients:</p>
       <ul className={classes.list}>{ingredients}</ul>
       <p>Continue to Checkout?</p>
+      <Button btnType="Danger" click={props.cancelPurchase}>
+        <span style={{ textTransform: "uppercase" }}>Cancel</span>
+      </Button>
+      <Button btnType="Success" click={props.cancelPurchase}>
+        <span style={{ textTransform: "uppercase" }}>Continue</span>
+      </Button>
     </Fragment>
   );
 };
