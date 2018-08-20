@@ -22,7 +22,7 @@ const orderSummary = props => {
       <Button btnType="Danger" click={props.cancelPurchase}>
         <span style={{ textTransform: "uppercase" }}>Cancel</span>
       </Button>
-      <Button btnType="Success" click={props.cancelPurchase}>
+      <Button btnType="Success" click={props.continuePurchase}>
         <span style={{ textTransform: "uppercase" }}>Continue</span>
       </Button>
     </Fragment>
