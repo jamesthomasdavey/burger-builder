@@ -1,0 +1,8 @@
+.list {
+  padding: 1rem;
+  list-style-type: none;
+}
+
+.list li {
+  text-indent: 1.5rem;
+}
