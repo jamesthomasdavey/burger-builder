@@ -3,7 +3,7 @@ import classes from "./Backdrop.module.css";
 
 const backdrop = props => (
   <div className={props.show ? classes.Backdrop : ""} 
-  onClick={props.cancelPurchase}/>
+  onClick={props.clicked}/>
 );
 
 export default backdrop;
