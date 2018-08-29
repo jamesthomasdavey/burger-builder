@@ -6,7 +6,7 @@ import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
 
 const INGREDIENT_PRICES = {
-  salad: 0.5,
+  lettuce: 0.5,
   cheese: 0.5,
   meat: 1.5,
   bacon: 1
@@ -15,7 +15,7 @@ const INGREDIENT_PRICES = {
 class BurgerBuilder extends Component {
   state = {
     ingredients: {
-      salad: 0,
+      lettuce: 0,
       cheese: 0,
       bacon: 0,
       meat: 0
